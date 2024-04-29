@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Python Compiler</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Online Python Compiler</h1>
+        <p class="welcome-message">Hey coder, write code and change the world. Happy coding!</p>
+        <div class="code-container">
+            <div class="code-input">
+                <textarea id="code" rows="10" cols="50" placeholder="Write your code here..."></textarea>
+            </div>
+            <div class="code-output">
+                <pre id="output"></pre>
+            </div>
+        </div>
+        <button id="compile">Compile & Execute</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+<body>
+    <div class="code-container">
+        <textarea class="code-input"></textarea>
+        <button class="execute-button">Execute</button>
+        <div class="output-window"></div>
+    </div>
+</body>

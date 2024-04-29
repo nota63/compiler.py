@@ -1,0 +1,63 @@
+/* Body with Background Image */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('https://i.morioh.com/200705/ad149e01.jpg'); /* Replace with your desired image URL */
+    background-size: cover;
+    color: #0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    transition: transform 0.5s ease; /* Smooth transition for zoom */
+}
+
+/* Code Container with Centered Layout */
+.code-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center; /* Center the container */
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
+    animation: fadeInFromBottom 1s forwards; /* Starting animation */
+}
+
+/* Code Input with Centered Layout */
+.code-input {
+    flex: 1;
+    margin-right: 10px;
+    animation: fadeInFromLeft 1s forwards; /* Starting animation */
+}
+
+/* Execute Button with Centered Layout */
+.execute-button {
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: fadeInFromRight 1s forwards; /* Starting animation */
+}
+
+/* Output Window with Centered Layout */
+.output-window {
+    background-color: #000;
+    color: #0f0;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    flex: 1;
+    margin-left: 10px;
+    animation: fadeInFromTop 1s forwards; /* Starting animation */
+}
+
+/* Execute Button Hover Effect */
+.execute-button:hover {
+    background-color: #000;
+    color: #0f0;
+}
